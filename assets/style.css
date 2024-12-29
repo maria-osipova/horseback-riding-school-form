@@ -1,0 +1,113 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/8066e9203726513.669c5fd8e15a4.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+h1, #description {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    color: #ead77c;
+
+}
+
+#level, #checkbox, #comments-p {
+    font-family: 'Playfair Display', serif;
+    color: #221f1d;
+}
+
+fieldset {
+    border: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+    font-family: 'Playfair Display', serif;
+    color: #221f1d;
+}
+
+#name, #email, #number, #dropdown, #comments {
+    margin: 0; /* Убираем дополнительные отступы */
+    width: 100%;
+    min-height: 2em;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    color: #b6aeae;
+}
+
+#name::placeholder,
+#email::placeholder,
+#number::placeholder,
+#comments::placeholder {
+    color: #b6aeae;
+    opacity: 1;
+}
+
+.radio, .checkbox {
+    display: block;
+    flex-direction: column;
+}
+
+textarea {
+    resize: vertical;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none; /* Safari */
+    -moz-appearance: none; /* Firefox */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns%3D%22http%3A//www.w3.org/2000/svg%22 viewBox%3D%220 0 4 5%22%3E%3Cpath fill%3D%22%23000%22 d%3D%22M2 0L0 2h4z%22/%3E%3C/svg%3E'); /* Кастомная стрелка */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 10px;
+    padding-right: 30px;
+    color: #b6aeae;
+}
+
+#submit {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    background-color: rgba(217, 108, 59, 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    color: #221f1d;
+    text-align: center;
+}
+
+#submit:hover {
+    background-color: rgba(217, 108, 59, 0.7);
+    transform: scale(1.05);
+}
