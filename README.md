@@ -1,1 +1,1 @@
-# horseback_riding_school_form
+# horseback-riding-school-form
